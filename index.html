@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Notes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="notescss.css">
+</head>
+
+<body>
+
+    <!-- Background Stars -->
+    <div class="star" style="top: 20%; left: 40%; animation-delay: 0s;"></div>
+    <div class="star" style="top: 90%; left: 50%; animation-delay: 0.5s;"></div>
+    <div class="star" style="top: 80%; left: 70%; animation-delay: 1s;"></div>
+    <div class="star" style="top: 30%; left: 5%; animation-delay: 1.5s;"></div>
+    <div class="star" style="top: 100%; left: 10%; animation-delay: 2s;"></div>
+    <div class="star" style="top: 5%; left: 10%; animation-delay: 2s;"></div>
+    <div class="star" style="bottom: 10%; left: 20%; animation-delay: 2s;"></div>
+    <div class="star" style="bottom: 10%; left: 10%; animation-delay: 2s;"></div>
+    <div class="star" style="bottom: 0%; left: 10%; animation-delay: 2s;"></div>
+    <div class="star" style="bottom: 10%; right: 5%; animation-delay: 2s;"></div>
+    <div class="star" style="bottom: 10%; right: 10%; animation-delay: 2s;"></div>
+    <div class="star" style="top: 5%; right: 10%; animation-delay: 2s;"></div>
+
+
+    <!-- Card Container -->
+    <div class="card-container">
+        <div class="card">
+            <h3>Happy Birthday!</h3>
+            <p>Wishing you a day filled with love, joy, and unforgettable memories!</p>
+            <button class="btn" onclick="showPopup('You are the light of my life! 💕')">Send Love</button>
+        </div>
+        <div class="card">
+            <h3>Cheers to You!</h3>
+            <p>May this special day be the start of a year full of happiness and blessings.</p>
+            <button class="btn" onclick="showPopup('You bring joy and happiness to everyone around you! 🎉')">Send Love</button>
+        </div>
+        <div class="card">
+            <h3>Celebrate Life!</h3>
+            <p>Here's to more laughter, adventures, and sweet moments together. Happy Birthday!</p>
+            <button class="btn" onclick="showPopup('Together, we create magic! ✨')">Send Love</button>
+        </div>
+        <div class="card">
+            <h3>To Many More!</h3>
+            <p>Let’s celebrate today with joy and gratitude for all the wonderful things you bring into our lives!</p>
+            <button class="btn" onclick="showPopup('Thank you for filling my life with happiness. 💖')">Send Love</button>
+        </div>
+        <div class="card">
+            <h3>Forever Grateful!</h3>
+            <p>Every day is a gift with you in it. Let’s cherish this special day forever.</p>
+            <button class="btn" onclick="showPopup('Your kindness and love make the world a better place. 🌟')">Send Love</button>
+        </div>
+        <div class="card">
+            <h3>Wishing You Peace</h3>
+            <p>May this year bring you all the peace and happiness you deserve.</p>
+            <button class="btn" onclick="showPopup('I wish you a lifetime of peace and joy. 🕊️')">Send Love</button>
+        </div>
+        <div class="card">
+            <h3>Stay Blessed!</h3>
+            <p>May your birthday be as wonderful as you are!</p>
+            <button class="btn" onclick="showPopup('You are truly a blessing to everyone around you! 🙏')">Send Love</button>
+        </div>
+        <div class="card">
+            <h3>Dream Big!</h3>
+            <p>Let this new year of life bring you closer to your dreams. Happy Birthday!</p>
+            <button class="btn" onclick="showPopup('May all your dreams come true! 🌠')">Send Love</button>
+        </div>
+    </div>
+
+    <!-- Popup Message -->
+    <div id="popup">
+        <p id="popup-message"></p>
+        <button onclick="closePopup()">Close</button>
+    </div>
+
+    <audio id="backgroundMusic" autoplay loop><source src="img/You Are My Soniya (From Kabhi Khushi Kabhie Gham) (Instrumental).mp3" type="audio/mpeg"></audio>
+
+
+    <script src="notejs.js">
+    </script>
+
+</body>
+
+</html>
